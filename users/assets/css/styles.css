@@ -1,0 +1,1926 @@
+* { padding: 0; margin: 0; text-decoration: none; list-style: none; box-sizing: border-box; }
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body { margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; }
+a { color: #009ce7; }
+.wrap { padding-top: 60px; }
+.pull-left { float: left; }
+.pull-right { float: right; }
+img { vertical-align: middle; }
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+.text-right { text-align: right; }
+.text-muted { color: #777; }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+.h4, .h5, .h6, h4, h5, h6 { margin-top: 10px; margin-bottom: 10px; }
+.h4, h4 { font-size: 18px; }
+h1, h2, h3, h4, h5, h6 { margin-top: 0; }
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+    height: 0;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+.row { margin-right: -15px; margin-left: -15px; }
+.row:before, row:after { display: table; content: " "; }
+.row:after { clear: both; }
+.text-ellipsis {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: " ";
+}
+.clearfix:after {
+	clear: both;
+}
+body { font-size: 13px; background-color: #eff3f6; }
+p { margin: 0 0 10px; }
+.m-b-0 { margin-bottom: 0!important; }
+
+
+
+/**
+ * Name: Header;
+ * Date: 29/03/2018;
+ * Author: Sky Albert;
+ */
+#header {
+	background: linear-gradient(to right, #ff9b44 0%, #fc6075 100%);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+	top: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	z-index: 999;
+	height: 60px;
+}
+
+#header .header-left {
+	float: left;
+	width: 15%;
+	position: relative;
+	height: 60px;
+	text-align: center;
+	padding: 0 20px;
+}
+
+#header .logo {
+	display: block;
+	line-height: 60px;
+}
+
+#header .title-box {
+	height: 60px;
+	padding: 17px 20px;
+	float: left;
+}
+
+#header .title-box h3 {
+	font-size: 20px;
+	font-weight: normal;
+	color: #fff;
+	margin: 0;
+}
+
+
+/**
+ * Name: Navbar;
+ * Date: 29/03/2018;
+ * Author: Sky Albert;
+ */
+.navbar {
+	position: relative;
+}
+
+.navbar:before, .navbar:after {
+	display: table;
+	content: " ";
+}
+
+.navbar:after {
+	clear: both;
+}
+
+.navbar-main {
+	background: #34444c;}
+
+.navbar-vertical-main {
+	position: fixed;
+    width: 230px;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar-vertical-main ul {
+	font-size: 14px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-main li {
+	cursor: pointer;
+}
+
+.menu-main li a {
+	position: relative;
+	color: #b7c0cd;
+	display: block;
+	font-size: 13px;
+	height: auto;
+	line-height: 40px;
+	min-height: 40px;
+	padding: 0 20px;
+	cursor: pointer;
+}
+
+.menu-main li a:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+.menu-main li.active a {
+	background-color: #263238;
+	color: #fff;
+}
+
+.menu-main li a.menu-dropdown::after {
+	content: '';
+	position: absolute;
+	right: 15px;
+	top: 17px;
+	width: 0;
+  	height: 0;
+  	border-left: 6px solid transparent;
+  	border-right: 6px solid transparent;
+  	border-top: 6px solid #b7c0cd;
+  	clear: both;
+}
+
+.sub-menu {
+	background: #263238;
+	display: none;
+}
+
+/**
+ * Name: Inner Struct Website;
+ * Date: 29/03/2018;
+ * Author: Sky Albert;
+ */
+
+.content:after, .content:before {
+	content: "";
+	display: table;
+}
+
+.content:after {
+	clear: both;
+}
+
+.inner-struct-website .container-big {
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.inner-struct-website .content {
+    left: 0;
+    margin-left: 230px;
+    padding-top: 60px;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.card-box {
+	background-color: #fff;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.card-widget-icon {
+	background-color: #eee;
+    border-radius: 100%;
+    color: #777;
+    display: inline-block;
+    float: left;
+    font-size: 30px;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 10px;
+    text-align: center;
+    width: 60px;
+}
+
+.card-widget-icon img {
+	width: 30px;
+	height: 30px;
+	opacity: 0.5;
+}
+
+.card-widget-title {
+	text-align: right;
+}
+
+.card-widget-title > h3 {
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.card-widget-title > span {
+	font-size: 16px;
+}
+
+.task-view {
+	background-color: #eff3f6;
+	display: table-cell;
+    height: 100%;
+    float: none;
+    padding: 0;
+    position: static;
+    vertical-align: top;
+}
+
+.header-task-view:after {
+	clear: both;
+}
+
+.task-view .header-task-view {
+	background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 15px;
+}
+
+.inner-header-task-view {
+	border: 0 none;
+    margin: 0;
+    min-height: auto;
+    position: relative;
+}
+
+.inner-header-task-view:before, .inner-header-task-view:after {
+	content: '';
+	display: table;
+}
+
+.inner-header-task-view:after {
+	clear: both;
+}
+
+.btn {
+	display: inline-block;
+	margin-bottom: 0;
+	text-align: center;
+	font-weight: 400;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+
+.btn-default {
+	color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-xs {
+	font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    min-height: 22px;
+    min-width: 22px;
+}
+
+.btn-add-task-view {
+	padding: 6px 10px;
+    text-transform: uppercase;
+}
+
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	display: none!important;
+	z-index: 9999999;
+	float: left;
+	min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    text-align: left;
+    list-style: none;
+   	border-radius: 3px;
+    transform-origin: left top 0;
+    box-shadow: inherit;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.config-task {
+	cursor: pointer;
+}
+
+.open {
+	display: block!important;
+}
+
+.task-view .dropdown-menu {
+	margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    left: auto;
+    right: 0;
+    display: block;
+    font-size: 13px;
+}
+
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+
+.chat-contents {
+	display: table-row;
+    height: 100%;
+}
+
+.chat-content-wrap {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.chat-wrap-inner {
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    right: 0;
+    top: 0;
+}
+
+.task-wrapper {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.task-wrapper .task-list-body {
+    max-height: 500px;
+    overflow: auto;
+}
+
+.task-wrapper #task-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.task-wrapper #task-list li {
+    margin: 0;
+    padding: 0;
+}
+
+.task-wrapper #task-list li .task-container {
+    display: table;
+    background: #fff;
+    padding: 8px 15px;
+    width: 100%;
+    border: 1px solid #eaeaea;
+    border-bottom: none;
+    box-sizing: border-box;
+    position: relative;
+    transition: background 200ms ease;
+}
+
+.task-wrapper #task-list li .task-container:hover {
+    background: #EBEEEF;
+}
+
+.task-action-btn.task-check {
+    text-align: left !important;
+    width: 40px;
+}
+
+.task-wrapper #task-list li .task-container .task-action-btn {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.action-circle.large {
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.action-circle {
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.task-check .action-circle {
+
+}
+
+.action-circle.large img {
+	height: 24px;
+	width: 24px;
+}
+
+.task-btn-right .action-circle img {
+	height: 13px;
+	width: 13px;
+	opacity: 0.4;
+}
+
+.task-btn-right .action-circle:hover {
+	border: 1px solid #000;
+}
+
+.task-btn-right .action-circle:hover img {
+	height: 13px;
+	width: 13px;
+	opacity: 1;
+}
+
+.task-wrapper #task-list li .task-container .task-label {
+    display: table-cell;
+    font-weight: 400;
+    vertical-align: middle;
+    color: #333;
+    word-break: break-all;
+    font-size: 13px;
+}
+
+.task:hover .task-btn-right {
+    display: table-cell !important;
+}
+
+.task-wrapper #task-list li .task-container .task-action-btn {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.task-wrapper .task-list-footer {
+    position: relative;
+}
+
+.task-wrapper .task-list-footer .new-task-wrapper.visible {
+    max-height: 300px;
+    overflow: auto;
+}
+
+.task-wrapper .task-list-footer .new-task-wrapper textarea {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #eaeaea;
+    outline: none;
+    font-size: 13px;
+    border-top: 0;
+    height: 45px;
+    resize: none;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    transition: all 300ms ease;
+}
+
+.hidden {
+    display: none!important;
+}
+
+.task-wrapper .task-list-footer .new-task-wrapper .btn {
+    padding: 10px 15px;
+    float: right;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.task-wrapper .task-list-footer .new-task-wrapper .add-new-task-btn {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.message-view {
+    display: table-cell;
+    height: 100%;
+    float: none;
+    padding: 0;
+    position: static;
+    vertical-align: top;
+}
+
+.task-chat-view {
+    border-left: 1px solid #eaeaea;
+}
+
+.chat-window {
+    display: table;
+    height: 100%;
+    table-layout: fixed;
+    width: 100%;
+    background-color: #eff3f6;
+}
+
+.chat-header {
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 15px;
+}
+
+.chat-header .navbar {
+    border: 0 none;
+    margin: 0;
+    min-height: auto;
+}
+
+.task-assign {
+    float: left;
+}
+
+.assign-title {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.task-assign > a {
+    float: left;
+}
+
+.avatar {
+    background-color: #aaa;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    height: 38px;
+    line-height: 38px;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 38px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.task-chat-view .avatar {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.followers-add {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    color: #ccc;
+    display: inline-block;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+}
+
+.followers-add img {
+	width: 15px;
+    height: 16px;
+    vertical-align: middle;
+    margin-top: -3px;
+    opacity: 0.5;
+}
+
+.task-chat-contents {
+    background-color: #fff;
+}
+
+.chat-content-wrap {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.chat-wrap-inner {
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.task-chat-view .chats {
+    padding: 15px 15px 30px;
+}
+
+.task-line {
+    border-color: #eaeaea;
+}
+
+.task-information {
+    color: #95a1a9;
+    font-size: 11px;
+    line-height: 17px;
+    min-width: 1px;
+    margin-left: 50px;
+}
+
+.task-info-line {
+    overflow-wrap: break-word;
+}
+
+.task-time {
+    color: #a3afb7;
+    display: inline-block;
+    font-size: 11px;
+}
+
+.task-information .task-time {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.task-user {
+    color: #95a1a9;
+    font-weight: 500;
+}
+
+.task-chat-contents .chat.chat-left {
+    margin-bottom: 20px;
+}
+
+.chat-left .chat-avatar {
+    float: left;
+}
+
+.task-chat-view .avatar {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.avatar > img {
+    width: 100%;
+    display: block;
+    border-radius: 100%;
+}
+
+.chat-body {
+    display: block;
+    margin: 10px 0 0;
+    overflow: hidden;
+}
+
+.chat-left .chat-body {
+    margin-right: 0;
+    margin-left: 30px;
+    padding-right: 20px;
+}
+
+.task-chat-view .chat-left .chat-body {
+    margin-left: 50px;
+}
+
+.chat-bubble {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.chat-left .chat-content {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    color: #76838f;
+    float: left;
+    position: relative;
+    padding: 8px 15px;
+    border-radius: 2px 20px 20px 2px;
+    max-width: 60%;
+    font-size: 13px;
+}
+
+.task-chat-view .chat-left .chat-content {
+    border: 0;
+    padding: 0;
+}
+
+.chat.chat-left .chat-bubble:first-child .chat-content {
+    border-top-left-radius: 20px;
+    margin-top: 0;
+}
+
+.chat.chat-left .chat-bubble:last-child .chat-content {
+    border-bottom-left-radius: 20px;
+}
+
+.task-chat-user {
+    color: #333;
+    font-size: 13px;
+}
+
+.task-chat-view .chat-left .chat-time {
+    color: #a3afb7;
+    display: inline-block;
+    font-size: 11px;
+}
+
+.task-chat-view .chat-content > p {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.completed-task-msg {
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.task-success {
+    color: #55ce63;
+    font-size: 13px;
+}
+
+.task-success a {
+    color: #55ce63;
+}
+
+.task-time {
+    color: #a3afb7;
+    display: inline-block;
+    font-size: 11px;
+}
+
+.file-attached {
+    color: #333;
+    font-size: 13px;
+}
+
+.file-attached img {
+	display: inline-block;
+	width: 15px;
+	height: 16px;
+	opacity: 0.5;
+}
+
+.attach-list {
+    color: #adb7be;
+    padding: 5px 0 0;
+    line-height: 24px;
+    margin: 0;
+    list-style: none;
+}
+
+.attach-list img.img-file {
+    margin-right: 3px;
+    width: 13px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.attach-img-download {
+    margin-bottom: 5px;
+}
+
+.chat-footer {
+    background-color: #fff;
+    border-top: 1px solid #eaeaea;
+    padding: 15px;
+}
+
+.message-bar {
+    display: table;
+    height: 44px;
+    position: relative;
+    width: 100%;
+}
+
+.message-bar .message-inner {
+    display: table-row;
+    height: 100%;
+    padding: 0 8px;
+    width: 100%;
+}
+
+.message-bar .link {
+    color: #777;
+    display: table-cell;
+    font-size: 20px;
+    padding: 0 10px;
+    position: relative;
+    vertical-align: middle;
+    width: 30px;
+}
+
+.message-bar .message-area {
+    display: table-cell;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.message-area .input-group .form-control {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    box-shadow: none;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    height: 44px;
+    margin: 0;
+    padding: 6px 12px;
+    width: 100%;
+    resize: none;
+    outline: none;
+}
+
+.input-group-btn {
+	display: table-cell;
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    width: 1%;
+    vertical-align: middle;
+}
+
+.message-area .btn {
+    height: 44px;
+    width: 50px;
+}
+
+.input-group-btn:last-child>.btn {
+    z-index: 2;
+    margin-left: -1px;
+    position: relative;
+}
+
+.btn-custom {
+    background: #ff9b44;
+    background: linear-gradient(to right, #ff9b44 0%, #fc6075 100%);
+    color: #fff;
+}
+
+.btn-custom img {
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+
+.task-followers {
+    display: flex;
+    margin-top: 15px;
+}
+
+.followers-title {
+    margin: 5px 10px 0 0;
+    font-size: 13px;
+}
+
+
+/**
+ * Name: Account Page;
+ * Date: 31/03/2018;
+ * Author: Sky Albert;
+ */
+
+.account-title {
+    font-size: 32px;
+    font-weight: normal;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.account-box {
+    margin: 0 auto;
+    width: 400px;
+    box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
+}
+
+.account-wrapper {
+    background-color: #fff;
+    padding: 30px;
+}
+
+.account-logo {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.account-box a {
+    color: #323232;
+    font-size: 16px;
+}
+
+.account-logo img {
+    width: 100px;
+}
+
+.form-focus {
+    display: flex;
+    height: 50px;
+    position: relative;
+}
+
+.account-box .form-group {
+    margin-bottom: 25px;
+}
+
+.form-focus .control-label {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.4;
+    pointer-events: none;
+    position: absolute;
+    transform: translate3d(0, 22px, 0) scale(1);
+    transform-origin: left top;
+    transition: 240ms;
+    left: 12px;
+    top: -8px;
+    z-index: 1;
+    color: #888;
+}
+
+.form-focus.focused .control-label {
+    opacity: 1;
+    font-weight: 300;
+    top: -14px;
+    font-size: 12px;
+    z-index: 1;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.account-box .form-control {
+    background-color: #f8fafc;
+    border: 1px solid #dfe3e9;
+    height: 50px;
+}
+
+.form-focus .form-control {
+    height: 50px;
+    padding: 21px 12px 6px;
+    box-shadow: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.account-box .account-btn {
+    background: #ff9b44;
+    background: linear-gradient(to right, #ff9b44 0%, #fc6075 100%);
+    border-radius: 0;
+    font-size: 22px;
+    padding: 10px 26px;
+    box-shadow: 0 6px 15px rgba(255, 155, 68, 0.6);
+    border: 0;
+}
+
+.account-box a {
+    color: #323232;
+    font-size: 16px;
+}
+
+/**
+ * Name: Project Page;
+ * Date: 31/03/2018;
+ * Author: Sky Albert;
+ */
+
+.page-wrapper > .container-fluid {
+    padding: 30px;
+}
+
+.page-title {
+    color: #565656;
+    font-size: 21px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.rounded, .circle {
+    border-radius: 500px;
+}
+
+.btn-orange {
+	background-color: #ff9b44;
+    border: 1px solid #ff9b44;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.btn-orange:hover {
+    background-color: #ff851a;
+    border: 1px solid #ff851a;
+}
+
+.project-title {
+    margin: 0 0 5px;
+}
+
+.project-title > a {
+    color: #333;
+}
+
+.project-title small {
+	margin-bottom: 15px;
+	font-size: 12px;
+}
+
+.files-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.files-list > li {
+    border-bottom: 1px solid #eaeaea;
+    border-radius: inherit;
+    margin: 2px 0 0;
+    padding: 10px;
+}
+
+.files-cont {
+    position: relative;
+}
+
+.file-type {
+    height: 48px;
+    position: absolute;
+    width: 48px;
+}
+
+.files-icon {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 38px;
+}
+
+.files-icon img {
+	width: 17px;
+	height: 20px;
+    vertical-align: top;
+    margin-top: 8px;
+}
+
+.files-info {
+    padding: 0 30px 0 50px;
+}
+
+.file-author a {
+    color: #ff9b44;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.file-date {
+    color: #888;
+    font-size: 12px;
+}
+
+.file-size {
+    color: #888;
+}
+
+.files-action {
+    display: none;
+    height: 30px;
+    list-style: none;
+    padding-left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+    width: 30px;
+}
+
+.files-list > li:hover .files-action {
+    display: block;
+}
+
+.dropdown, .dropup {
+    position: relative;
+}
+
+.dropdown img {
+	width: 9px;
+}
+
+.files-action .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+
+.files-action .dropdown-menu {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    transform-origin: left top 0;
+    box-shadow: inherit;
+    background-color: #fff;
+}
+
+.nav-tabs-top {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs-top>li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+    position: relative;
+}
+
+.nav-tabs-top > li > a {
+	border-width: 2px 0 0 0;
+	border-style: solid;
+	border-color: transparent;
+	position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #555;
+    cursor: default;
+    background-color: transparent;
+    text-align: center;
+}
+
+.nav-tabs-top > li.active > a {
+	border-top-color: #ff9b44;
+	background-color: #fff;
+}
+
+.tab-content {
+    padding-top: 20px;
+}
+
+.project-task .tab-content {
+    min-height: 200px;
+}
+
+.project-task .task-wrapper {
+    padding: 0;
+}
+
+.progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+.progress-xs {
+    height: 5px;
+}
+
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+.progress-bar-success {
+    background-color: #5cb85c;
+}
+
+.btn-xs {
+    min-height: 22px;
+    min-width: 22px;
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.list-box {
+    list-style: none;
+    padding-left: 0;
+}
+
+.project-user .list-box {
+    margin: 0;
+}
+
+.project-user .list-item {
+    border: 0 none;
+    padding: 10px 0;
+}
+
+.list-left {
+    height: 48px;
+    position: absolute;
+    width: 48px;
+}
+
+.list-body {
+    padding: 0 0 0 50px;
+}
+
+.message-author {
+    color: #333;
+    float: left;
+    font-weight: bold;
+    width: 175px;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.message-content {
+    color: #333;
+    font-size: 13px;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.panel-title a.btn img {
+	width: 12px;
+	height: 12px;
+}
+
+/**
+ * Name: Page Project List;
+ * Date: 31/03/2018;
+ * Author: Sky Albert;
+ */
+
+.select2-hidden-accessible {
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+}
+
+.select2-container {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    vertical-align: middle;
+}
+
+.select2-container .select2-selection--single {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.select2-container .select2-selection--single {
+    border: 1px solid #ccc;
+    height: 40px;
+    border-radius: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    background-color: #fff;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-right: 30px;
+    padding-left: 15px;
+    color: #676767;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 38px;
+}
+
+.form-focus.select-focus .control-label {
+    opacity: 1;
+    font-weight: 300;
+    top: -20px;
+    font-size: 12px;
+    z-index: 1;
+}
+
+.form-focus .select2-container .select2-selection--single {
+    border: 1px solid #ccc;
+    height: 50px;
+    border-radius: 0;
+    background-color: #fff;
+}
+
+.form-focus .select2-container .select2-selection--single .select2-selection__rendered {
+    padding-right: 30px;
+    padding-left: 12px;
+    padding-top: 10px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.form-focus .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #676767;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 38px;
+}
+
+.form-focus .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 48px;
+    right: 7px;
+    position: absolute;
+    top: 1px;
+    width: 20px;
+}
+
+.form-focus .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #ccc transparent transparent;
+    border-style: solid;
+    border-width: 6px 6px 0;
+    height: 0;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+
+.select2-results {
+    display: block;
+}
+
+.select2-results__options {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.select2-results__option {
+    padding: 6px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.select2-results__option[aria-selected] {
+    cursor: pointer;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #ddd;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #5897fb;
+    color: white;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #ff9b44;
+}
+
+.btn-success {
+    background-color: #55ce63;
+    border: 1px solid #55ce63;
+    color: #fff;
+}
+
+.filter-row .btn {
+    border-radius: 0;
+    min-height: 50px;
+    padding: 14px 12px;
+    text-transform: uppercase;
+}
+
+.project-box {
+    position: relative;
+}
+
+.team-members {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.team-members a {
+    border: 2px solid #fff;
+    border-radius: 100%;
+    display: block;
+    height: 38px;
+    overflow: hidden;
+    width: 38px;
+}
+
+.team-members li {
+    float: left;
+}
+
+.team-members li:first-child a {
+    margin-left: 0;
+}
+
+.team-members img {
+    width: 100%;
+}
+
+.all-users {
+    background-color: #ff5e3a;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 34px;
+    text-align: center;
+}
+
+.team-members .all-users {
+    line-height: 36px;
+    opacity: 0.8;
+}
+
+
+
+/**
+ * Name: Css Panel;
+ * Date: 31/03/2018;
+ * Author: Sky Albert;
+ * Liences: RHP Team;
+ */
+
+.panel {
+    border: 1px solid #ededed;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+.panel-body:before, .panel-body:after {
+	display: table;
+	content: " ";
+}
+
+.panel-body:after {
+	clear: both;
+}
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: inherit;
+}
+
+/**
+ * Name: Css Thumbail;
+ * Date: 31/03/2018;
+ * Author: Sky Albert;
+ * Lineces: RHP Team;
+ */
+
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border .2s ease-in-out;
+}
+
+.thumbnail .caption {
+    padding: 9px;
+    color: #333;
+}
+
+.thumbnail img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+/**
+ * Name: Grid Library;
+ * Date: 29/03/2018;
+ * Author: SKy Albert;
+ */
+
+ .grid-offset-8 {
+   width: 67%;
+   margin: 0 auto;
+ }
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-4 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-12 {
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+
+.grid-7-3 {
+	display: grid;
+	grid-template-columns: 55% 45%;
+}
+
+.grid-9-3 {
+	display: grid;
+	grid-template-columns: 67% 33%;
+}
+
+.grid-gap-15 {
+  grid-column-gap: 15px;
+}
+
+.grid-gap-30 {
+  grid-column-gap: 30px;
+}
+
+/**
+ * Name: Css Distance;
+ * Date: 31/03/2018;
+ * Author: Sky Albert;
+ * Lieces: RHP Team;
+ */
+
+.p-l-30 { padding-left: 30px; }
+.m-b-0 { margin-bottom: 0; }
+.m-b-5 { margin-bottom: 5px; }
+.m-b-15 { margin-bottom: 15px; }
+.m-b-30 { margin-bottom: 30px; }
+.m-t-30 { margin-top: 30px; }
+
+
+/**
+ * Name: Css Table;
+ * Date: 31/03/2018;
+ * Author: Sky Albert;
+ * Lieces: RHP Team;
+ */
+
+table {
+	width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.table {
+	color: #000;
+}
+
+.table-border {
+    border: 1px solid #ddd;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: #f6f6f6;
+}
+
+.table > tbody > tr > td {
+    font-weight: 300;
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+/**
+ * Name Css Modal
+ * Date: 31/08/2018;
+ * Author: SKy Albert;
+ */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.fade.in {
+    opacity: 1;
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal.custom-modal {
+    background-color: #eff3f6;
+}
+
+.modal.custom-modal {
+    left: 230px;
+    top: 61px;
+}
+
+.modal-dialog {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    transition: transform .3s ease-out;
+    transform: translate(0,0);
+}
+
+.custom-modal button.close {
+    background: #ff9b44;
+    background: linear-gradient(to right, #ff9b44 0%, #fc6075 100%);
+    border-radius: 50%;
+    height: 50px;
+    left: -15px;
+    opacity: 1;
+    position: relative;
+    top: 15px;
+    width: 50px;
+    text-shadow: inherit;
+    color: #fff;
+    z-index: 99;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+button.close {
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+
+.modal-content {
+    position: relative;
+    outline: 0;
+}
+
+.modal-lg {
+    width: 900px;
+}
+
+.custom-modal .modal-content {
+    border: 0 none;
+    box-shadow: inherit;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 30px 0;
+}
+
+.custom-modal .modal-header {
+    border: 0;
+    padding: 0;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+
+.custom-modal .modal-title {
+    margin-bottom: 20px;
+}
+
+.modal-body {
+    position: relative;
+    padding: 0;
+}
+
+
+
+/**
+ * Name: Css for form;
+ * Date: 01/04/2018;
+ * Author: Sky Albert;
+ */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.form-control {
+    border-radius: 0;
+    box-shadow: none;
+    height: 40px;
+    outline: none;
+}
+
+textarea.form-control {
+    height: auto;
+}
+
+/**
+ * Name: Css for Profile;
+ * Date: 01/04/2018;
+ * Author: Sky Albert;
+ */
+
+.profile-img-wrap {
+    height: 120px;
+    position: absolute;
+    width: 120px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.profile-view .profile-img-wrap {
+    height: 150px;
+    width: 150px;
+}
+
+.profile-img {
+    cursor: pointer;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    width: 80px;
+}
+
+.profile-view .profile-img {
+    width: 150px;
+    height: 150px;
+}
+
+.profile-view .profile-img .avatar {
+    font-size: 24px;
+    height: 150px;
+    line-height: 150px;
+    margin: 0;
+    width: 150px;
+}
+
+
+/**
+* Name: Css for Page;
+* Date: 14/04/2018;
+* Author: Sky Albert;
+*/
+
+.page-wrapper .wrapper-content {
+  padding: 30px;
+  margin: 0 auto;
+}
