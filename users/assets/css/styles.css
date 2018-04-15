@@ -229,6 +229,13 @@ p { margin: 0 0 10px; }
     padding: 20px;
 }
 
+.card-title {
+    color: #333;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
 .card-widget-icon {
 	background-color: #eee;
     border-radius: 100%;
@@ -313,6 +320,39 @@ p { margin: 0 0 10px; }
 	color: #333;
     background-color: #fff;
     border-color: #ccc;
+}
+
+.fileupload.btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: rgba(33, 33, 33, 0.5);
+    border-radius: 0;
+    padding: 3px 10px;
+    border: none;
+}
+
+.btn-text {
+    color: #fff;
+}
+
+input[type="file"] {
+    height: auto;
+    display: block;
+    outline: none;
+}
+
+.fileupload input.upload {
+    cursor: pointer;
+    filter: alpha(opacity=0);
+    font-size: 20px;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    padding: 5px;
 }
 
 .btn-xs {
@@ -1629,6 +1669,12 @@ p { margin: 0 0 10px; }
  * Author: SKy Albert;
  */
 
+
+.grid-offset-6 {
+    width: 50%;
+    margin: 0 auto;
+}
+
  .grid-offset-8 {
    width: 67%;
    margin: 0 auto;
@@ -1644,10 +1690,20 @@ p { margin: 0 0 10px; }
 	grid-template-columns: repeat(4, 1fr);
 }
 
-.grid-12 {
+.grid-1 {
   display: grid;
   grid-template-columns: 1fr;
 
+}
+
+.grid-3-9 {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.grid-5-7 {
+    display: grid;
+    grid-template-columns: 42% 58%;
 }
 
 .grid-7-3 {
@@ -1680,6 +1736,8 @@ p { margin: 0 0 10px; }
 .m-b-5 { margin-bottom: 5px; }
 .m-b-15 { margin-bottom: 15px; }
 .m-b-30 { margin-bottom: 30px; }
+.m-t-0 { margin-top: 0; }
+.m-t-20 { margin-top: 20px; }
 .m-t-30 { margin-top: 30px; }
 
 
@@ -1911,6 +1969,152 @@ textarea.form-control {
     line-height: 150px;
     margin: 0;
     width: 150px;
+}
+
+.profile-view .profile-basic {
+    margin-left: 170px;
+}
+
+.profile-info-left {
+    border-right: 2px dashed #ccc;
+}
+
+.profile-img-wrap {
+    height: 120px;
+    position: absolute;
+    width: 120px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.profile-img-wrap img {
+    width: 120px;
+    height: 120px;
+}
+
+.profile-basic {
+    margin-left: 140px;
+}
+
+.profile-basic .cal-icon {
+    width: 100%;
+    position: relative;
+}
+
+.user-name {
+    color: #333;
+    font-size: 24px;
+}
+
+.staff-id {
+    margin-top: 5px;
+}
+
+.staff-msg {
+    margin-top: 30px;
+}
+
+.personal-info {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.personal-info li {
+    margin-bottom: 10px;
+}
+
+.personal-info li .title {
+    color: #515365;
+    float: left;
+    font-weight: 500;
+    margin-right: 30px;
+    width: 30%;
+}
+
+.personal-info li .text {
+    color: #888da8;
+    display: block;
+    overflow: hidden;
+}
+
+.skills > span {
+    border: 1px solid #ccc;
+    border-radius: 500px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    text-align: center;
+}
+
+.experience-box {
+    position: relative;
+}
+
+.experience-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.experience-list::before {
+    background: #ddd;
+    bottom: 0;
+    content: "";
+    left: 8px;
+    position: absolute;
+    top: 8px;
+    width: 2px;
+}
+
+.experience-list > li {
+    position: relative;
+}
+
+.experience-list > li .experience-user {
+    background: #fff;
+    height: 10px;
+    left: 4px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 4px;
+    width: 10px;
+}
+
+.before-circle {
+    background-color: #ddd;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+.experience-list > li .experience-content {
+    background-color: #fff;
+    margin: 0 0 20px 40px;
+    padding: 0;
+    position: relative;
+}
+
+.experience-list > li .experience-content .timeline-content {
+    color: #9e9e9e;
+}
+
+.experience-list > li .experience-content .timeline-content a.name {
+    color: #616161;
+    font-weight: bold;
+}
+
+.experience-list > li:last-child .experience-content {
+    margin-bottom: 0;
+}
+
+.experience-list > li .time {
+    color: #bdbdbd;
+    display: block;
+    font-size: 12px;
+    line-height: 1.35;
 }
 
 

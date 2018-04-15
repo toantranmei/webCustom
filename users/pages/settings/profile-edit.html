@@ -1,1 +1,240 @@
-profile-edit.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Administartors For CMS | Sky Albert</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header id="header">
+            <div class="header-left">
+                <a href="index.html" class="logo">
+                    <img src="../../assets/img/logo.png" width="40" height="40" alt="">
+                </a>
+            </div>
+            <div class="title-box">
+                <h3>Focus Technologies</h3>
+            </div>
+        </header>
+        <div class="inner-struct-website">
+            <!-- Start: Navbar Menu -->
+            <nav class="navbar-main navbar-vertical-main">
+                <ul class="menu-main">
+
+                    <li>
+                        <a href="index.html">Activity Stream</a>
+                    </li>
+                    <li class="active">
+                        <a href="tasks.html">Tasks</a>
+                    </li>
+                    <li>
+                        <a class="menu-dropdown" href="javascript:void(0)">Company Act</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Company.Drive</a>
+                            </li>
+                            <li>
+                                <a href="#">Company.Webmail</a>
+                            </li>
+                            <li>
+                                <a href="#">Company.Structure</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="settings.html">Settings</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End: Navbar Menu -->
+            <!-- Start: Content website -->
+            <section class="content container-big page-wrapper" style="padding: 0;">
+				<div class="wrapper-content">
+					<div class="grid-row">
+						<div class="col-sm-8">
+							<h4 class="page-title">Edit Profile</h4>
+						</div>
+					</div>
+					<form>
+						<div class="card-box">
+							<h3 class="card-title">Basic Informations</h3>
+							<div class="grid-row grid-1">
+								<div class="grid-ch">
+									<div class="profile-img-wrap">
+										<img class="inline-block" src="../../assets/img/user.jpg" alt="user">
+										<div class="fileupload btn btn-default">
+											<span class="btn-text">edit</span>
+											<input class="upload" type="file">
+										</div>
+									</div>
+									<div class="profile-basic">
+										<div class="grid-row grid-2 grid-gap-30">
+											<div class="grid-ch">
+												<div class="form-group form-focus">
+													<label class="control-label">First Name</label>
+													<input type="text" class="form-control floating">
+												</div>
+											</div>
+											<div class="grid-ch">
+												<div class="form-group form-focus">
+													<label class="control-label">Last Name</label>
+													<input type="text" class="form-control floating">
+												</div>
+											</div>
+											<div class="grid-ch">
+												<div class="form-group form-focus focused">
+													<label class="control-label">Birth Date</label>
+													<div class="cal-icon"><input class="form-control floating" type="date"></div>
+												</div>
+											</div>
+											<div class="grid-ch">
+												<div class="form-group form-focus select-focus">
+													<label class="control-label">Gendar</label>
+													<select class="select form-control floating select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+														<option value="">Select Gendar</option>
+														<option value="">Male</option>
+														<option value="">Female</option>
+													</select><span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-zyw2-container"><span class="select2-selection__rendered" id="select2-zyw2-container" title="Select Gendar">Select Gendar</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-box">
+							<h3 class="card-title">Contact Informations</h3>
+							<div class="grid-row grid-1">
+								<div class="grid-ch">
+									<div class="form-group form-focus">
+										<label class="control-label">Address</label>
+										<input type="text" class="form-control floating">
+									</div>
+								</div>
+							</div>
+							<div class="grid-2 grid-gap-30 grid-row">
+								<div class="grid-ch">
+									<div class="form-group form-focus">
+										<label class="control-label">State</label>
+										<input type="text" class="form-control floating">
+									</div>
+								</div>
+								<div class="grid-ch">
+									<div class="form-group form-focus">
+										<label class="control-label">Country</label>
+										<input type="text" class="form-control floating">
+									</div>
+								</div>
+								<div class="grid-ch">
+									<div class="form-group form-focus">
+										<label class="control-label">Pin Code</label>
+										<input type="text" class="form-control floating">
+									</div>
+								</div>
+								<div class="grid-ch">
+									<div class="form-group form-focus">
+										<label class="control-label">Phone Number</label>
+										<input type="text" class="form-control floating">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-box">
+							<h3 class="card-title">Education Informations</h3>
+							<div class="grid-row grid-2 grid-gap-30">
+								<div class="grid-ch">
+									<div class="form-group form-focus">
+										<label class="control-label">Institution</label>
+										<input type="text" class="form-control floating">
+									</div>
+								</div>
+								<div class="grid-ch">
+									<div class="form-group form-focus">
+										<label class="control-label">Subject</label>
+										<input type="text" class="form-control floating">
+									</div>
+								</div>
+								<div class="grid-ch">
+									<div class="form-group form-focus">
+										<label class="control-label">Starting Date</label>
+										<input type="text" class="form-control floating">
+									</div>
+								</div>
+								<div class="grid-ch">
+									<div class="form-group form-focus">
+										<label class="control-label">Complete Date</label>
+										<input type="text" class="form-control floating">
+									</div>
+								</div>
+								<div class="grid-ch">
+									<div class="form-group form-focus">
+										<label class="control-label">Degree</label>
+										<input type="text" class="form-control floating">
+									</div>
+								</div>
+								<div class="grid-ch">
+									<div class="form-group form-focus">
+										<label class="control-label">Grade</label>
+										<input type="text" class="form-control floating">
+									</div>
+								</div>
+							</div>
+							<div class="add-more">
+								<a href="#" class="btn btn-orange"><i class="fa fa-plus"></i> Add More Institute</a>
+							</div>
+						</div>
+						<div class="card-box">
+							<h3 class="card-title">Experience Informations</h3>
+							<div class="grid-row grid-2 grid-gap-30">
+								<div class="grid-ch">
+									<div class="form-group form-focus">
+										<label class="control-label">Company Name</label>
+										<input type="text" class="form-control floating">
+									</div>
+								</div>
+								<div class="grid-ch">
+									<div class="form-group form-focus">
+										<label class="control-label">Location</label>
+										<input type="text" class="form-control floating">
+									</div>
+								</div>
+								<div class="grid-ch">
+									<div class="form-group form-focus">
+										<label class="control-label">Job Position</label>
+										<input type="text" class="form-control floating">
+									</div>
+								</div>
+								<div class="grid-ch">
+									<div class="form-group form-focus">
+										<label class="control-label">Period From</label>
+										<input type="text" class="form-control floating">
+									</div>
+								</div>
+								<div class="grid-ch">
+									<div class="form-group form-focus">
+										<label class="control-label">Period To</label>
+										<input type="text" class="form-control floating">
+									</div>
+								</div>
+							</div>
+							<div class="add-more">
+								<a href="#" class="btn btn-orange"><i class="fa fa-plus"></i> Add More Experience</a>
+							</div>
+						</div>
+						<div class="text-center m-t-20">
+							<button class="btn btn-orange btn-lg" type="button">Save &amp; update</button>
+						</div>
+					</form>
+				</div>
+            </section>
+            <!-- End: Content website -->
+        </div>
+    </div>
+    <script type="text/javascript" src="../../assets/js/main.js"></script>
+</body>
+
+</html>
